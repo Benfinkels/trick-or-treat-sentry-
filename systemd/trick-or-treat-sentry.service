@@ -1,0 +1,16 @@
+[Unit]
+Description=Halloween Trick-or-Treater Edge AI Sentry (Camera + Local Vision + Discord)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/alfred/projects/trick-or-treat-sentry
+EnvironmentFile=/home/alfred/projects/trick-or-treat-sentry/.env
+ExecStart=/usr/bin/python3 /home/alfred/projects/trick-or-treat-sentry/sentry.py --daemon
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target
