@@ -76,7 +76,7 @@ Empirical performance metrics recorded during Halloween night operations:
 
 ### 2. Installation
 ```bash
-git clone https://github.com/Benfinkels/trick-or-treat-sentry.git
+git clone https://github.com/Benfinkels/trick-or-treat-sentry-.git
 cd trick-or-treat-sentry
 pip install -r requirements.txt
 ```
